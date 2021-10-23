@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FaMagento } from 'react-icons/fa';
 import { Container } from '../globals.styled';
-
+import {Link as LinkS} from 'react-scroll';
 export const Nav = styled.nav`
   background: #101522;
   height: 80px;
@@ -97,13 +97,14 @@ export const NavItemBtn = styled.li`
   }
 `;
 
-export const NavLinks = styled.a`
+export const NavLinks = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  cursor: pointer;
 
   @media screen and (max-width: 960px) {
     text-align: center;
