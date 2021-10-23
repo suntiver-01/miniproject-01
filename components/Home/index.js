@@ -11,11 +11,11 @@ export default function Home() {
     <React.Fragment>
       <GlobalStyle />
       <Navbar />
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjThree} />
+      <InfoSection {...homeObjOne}  />
+      <InfoSection {...homeObjThree}  />
       <InfoSection {...homeObjTwo} />
-      <Pricing />
-      <InfoSection {...homeObjFour} />
+      <Pricing id={'two'} />
+      <InfoSection {...homeObjFour}  />
       <Footer/>
     </React.Fragment>
   );

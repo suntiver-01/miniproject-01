@@ -1,4 +1,5 @@
 export const homeObjOne = {
+  id:'one',
   primary: true,
   lightBg: false,
   lightTopLine: true,
@@ -16,6 +17,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
+  id:'two',
   primary: true,
   lightBg: false,
   lightTopLine: true,
@@ -33,6 +35,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
+  id:'three',
   primary: false,
   lightBg: true,
   lightTopLine: false,
@@ -51,6 +54,7 @@ export const homeObjThree = {
 };
 
 export const homeObjFour = {
+  id:'four',
   primary: true,
   lightBg: false,
   lightTopLine: true,

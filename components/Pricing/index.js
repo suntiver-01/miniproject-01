@@ -5,10 +5,10 @@ import { GiCutDiamond, GiRock } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import * as S from  './Pricing.styled'
 
-function Pricing() {
+function Pricing({id}) {
   return (
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
-      <S.PricingSection>
+      <S.PricingSection  id={id}>
         <S.PricingWrapper>
           <S.PricingHeading>Our Services</S.PricingHeading>
           <S.PricingContainer>

@@ -29,8 +29,8 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <S.Nav>
           <S.NavbarContainer>
-            <S.NavLogo to='/' onClick={closeMobileMenu}>
-              <S.NavIcon />
+            <S.NavLogo  onClick={closeMobileMenu}>
+              <S.NavIcon to='one' />
               ULTRA
             </S.NavLogo>
             <S.MobileIcon onClick={handleClick}>
@@ -38,29 +38,29 @@ function Navbar() {
             </S.MobileIcon>
             <S.NavMenu onClick={handleClick} click={click}>
               <S.NavItem>
-                <S.NavLinks to='/' onClick={closeMobileMenu}>
+                <S.NavLinks to='one' onClick={closeMobileMenu} smooth={true}>
                   Home
                 </S.NavLinks>
               </S.NavItem>
               <S.NavItem>
-                <S.NavLinks to='/services' onClick={closeMobileMenu}>
+                <S.NavLinks to='two' onClick={closeMobileMenu} smooth={true}>
                   Services
                 </S.NavLinks>
               </S.NavItem>
               <S.NavItem>
-                <S.NavLinks to='/products' onClick={closeMobileMenu}>
+                <S.NavLinks to='four' onClick={closeMobileMenu} smooth={true}>
                   Products
                 </S.NavLinks>
               </S.NavItem>
               <S.NavItemBtn>
                 {button ? (
-                  <S.NavBtnLink to='/sign-up'>
-                    <Button primary>SIGN UP</Button>
+                  <S.NavBtnLink to='three' smooth={true}>
+                    <Button primary>Pricing</Button>
                   </S.NavBtnLink>
                 ) : (
-                  <S.NavBtnLink to='/sign-up'>
+                  <S.NavBtnLink to='three' smooth={true}>
                     <Button onClick={closeMobileMenu} fontBig primary>
-                      SIGN UP
+                    Pricing
                     </Button>
                   </S.NavBtnLink>
                 )}

@@ -3,6 +3,7 @@ import { Container, Button } from '../globals.styled';
 import * as S from './InfoSection.styled'
 
 function InfoSection({
+  id,
   primary,
   lightBg,
   topLine,
@@ -19,7 +20,7 @@ function InfoSection({
 }) {
   return (
     <React.Fragment>
-      <S.InfoSec lightBg={lightBg}>
+      <S.InfoSec lightBg={lightBg} id={id}>
         <Container>
           <S.InfoRow imgStart={imgStart}>
             <S.InfoColumn>
