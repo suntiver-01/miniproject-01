@@ -3,7 +3,7 @@ import GlobalStyle from "../globals.styled";
 import Navbar from "../Navbar";
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import InfoSection  from '../InfoSection';
-
+import Footer from '../Footer'
 export default function Home() {
   return (
     <React.Fragment>
@@ -13,6 +13,7 @@ export default function Home() {
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjFour} />
+      <Footer/>
     </React.Fragment>
   );
 }
