@@ -4,6 +4,8 @@ import Navbar from "../Navbar";
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import InfoSection  from '../InfoSection';
 import Footer from '../Footer'
+import Pricing from '../Pricing'
+
 export default function Home() {
   return (
     <React.Fragment>
@@ -12,6 +14,7 @@ export default function Home() {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjTwo} />
+      <Pricing />
       <InfoSection {...homeObjFour} />
       <Footer/>
     </React.Fragment>
